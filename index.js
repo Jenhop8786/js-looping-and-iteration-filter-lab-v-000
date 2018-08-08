@@ -5,3 +5,11 @@ function findMatching(drivers, name) {
     return driver.toLowerCase() === name.toLowerCase()
   })
 }
+
+function fuzzyMatch(drivers, letters) {
+  return drivers.filter (function(driver){
+    return driver.startsWith(letters)
+  })
+}
+
+
